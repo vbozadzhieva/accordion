@@ -89,6 +89,10 @@ body {
         width: 70%;
     }
 
+    .accordion .accordion-title {
+        font-size: 1.2em;
+    }
+
     .accordion .content-container .question {
         font-size: 1em;
     }
