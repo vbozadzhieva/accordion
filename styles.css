@@ -17,7 +17,7 @@ body {
 }
 
 .accordion {
-    width: 65%;
+    width: 60%;
     background-color: whitesmoke;
     padding: 30px;
     border-radius: 30px;
@@ -25,8 +25,7 @@ body {
 
 .accordion .accordion-title {
     color: rgb(10, 10, 81);
-    font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -34,7 +33,7 @@ body {
     color: rgb(10, 10, 81);
     font-weight: 500;
     padding: 18px 0px;
-    font-size: 22px;
+    font-size: 1.4em;
     cursor: pointer;
     border-bottom: 1px solid grey;
 
@@ -70,4 +69,35 @@ body {
 .accordion .content-container.active .question::after {
     content: '-';
     transition: .5s;
+}
+
+/* media queries */
+@media(max-width: 1120px) {
+    .accordion .content-container .question {
+        font-size: 1.3em;
+    }
+}
+
+@media(max-width: 640px) {
+    .accordion .content-container .question {
+        font-size: 1.2em;
+    }
+}
+
+@media(max-width: 400px) {
+    .accordion {
+        width: 70%;
+    }
+
+    .accordion .content-container .question {
+        font-size: 1em;
+    }
+
+    .accordion .content-container .answer {
+        font-size: 0.9em;
+    }
+
+    .accordion .content-container.active .answer {
+        height: auto;
+    }
 }
